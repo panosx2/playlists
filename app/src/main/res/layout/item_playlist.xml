@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <carbon.widget.RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        android:background="@android:color/black"
+        app:carbon_cornerRadius="15dp"
+        app:carbon_elevation="10dp"
+        app:carbon_rippleColor="@color/colorPrimary"
+        app:carbon_elevationShadowColor="@color/colorPrimary">
+
+        <carbon.widget.ImageView
+            android:id="@+id/image"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@color/colorPrimary"
+            app:carbon_cornerRadius="10dp"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/image"
+            android:text="Name of Playlist"
+            android:textSize="16sp"
+            android:maxLines="2"
+            android:lines="2"
+            android:paddingLeft="5dp"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/image"
+            android:layout_below="@+id/name"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="(60 tracks)"
+            android:textStyle="normal"
+            android:textColor="@color/colorAccent"/>
+
+    </carbon.widget.RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
